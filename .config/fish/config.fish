@@ -4,6 +4,7 @@ if status is-interactive
     set fish_greeting
     if [ -f /run/.containerenv ]
 	distrobox-host-exec sudo -S chown -R oro:oro /tmp/.X11-unix
+	alias flatpak='distrobox-host-exec flatpak'
     end
 end
 alias docker=podman
